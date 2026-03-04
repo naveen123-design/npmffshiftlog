@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ShiftLog Pro</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0d1b2a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    text-align: center;
+    padding: 40px 32px;
+    background: rgba(31,58,95,0.6);
+    border: 1px solid rgba(79,195,247,0.2);
+    border-radius: 20px;
+    max-width: 360px;
+    width: 90%;
+  }
+  .icon { font-size: 52px; margin-bottom: 16px; }
+  h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #f0f6fc;
+    margin-bottom: 8px;
+  }
+  p { font-size: 14px; color: #8b9bb4; margin-bottom: 28px; }
+  .btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: linear-gradient(135deg, #1565c0, #4fc3f7);
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 8px 24px rgba(79,195,247,0.25);
+  }
+  .spin {
+    width: 32px; height: 32px;
+    border: 3px solid rgba(79,195,247,0.2);
+    border-top-color: #4fc3f7;
+    border-radius: 50%;
+    animation: sp 0.8s linear infinite;
+    margin: 0 auto 16px;
+    display: none;
+  }
+  @keyframes sp { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="icon">📋</div>
+  <h1>ShiftLog Pro</h1>
+  <p>Operations Management System</p>
+  <div class="spin" id="spin"></div>
+  <a class="btn" id="btn"
+     href="https://script.google.com/macros/s/AKfycbyZ_pEVZxfc99uj4oTz-kwqkQVNh2vZZE7rTjcJaR8QFiXAlb3M96Zd623I1U_TGBwcUg/exec"
+     onclick="loading()">
+    Open Shift Log →
+  </a>
+</div>
+<script>
+  function loading() {
+    document.getElementById('spin').style.display = 'block';
+    document.getElementById('btn').textContent = 'Opening…';
+  }
+
+  // Auto-redirect after 1 second
+  setTimeout(function() {
+    window.location.href = "https://script.google.com/macros/s/AKfycbyZ_pEVZxfc99uj4oTz-kwqkQVNh2vZZE7rTjcJaR8QFiXAlb3M96Zd623I1U_TGBwcUg/exec";
+  }, 1000);
+</script>
+</body>
+</html>

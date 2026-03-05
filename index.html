@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>ShiftLog Pro</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #0d1b2a;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .box {
-    text-align: center;
-    padding: 40px 32px;
-    background: rgba(31,58,95,0.6);
-    border: 1px solid rgba(79,195,247,0.2);
-    border-radius: 20px;
-    max-width: 360px;
-    width: 90%;
-  }
-  .icon { font-size: 52px; margin-bottom: 16px; }
-  h1 {
-    font-size: 24px;
-    font-weight: 800;
-    color: #f0f6fc;
-    margin-bottom: 8px;
-  }
-  p { font-size: 14px; color: #8b9bb4; margin-bottom: 28px; }
-  .btn {
-    display: inline-block;
-    padding: 16px 40px;
-    background: linear-gradient(135deg, #1565c0, #4fc3f7);
-    color: white;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.3px;
-    box-shadow: 0 8px 24px rgba(79,195,247,0.25);
-  }
-  .spin {
-    width: 32px; height: 32px;
-    border: 3px solid rgba(79,195,247,0.2);
-    border-top-color: #4fc3f7;
-    border-radius: 50%;
-    animation: sp 0.8s linear infinite;
-    margin: 0 auto 16px;
-    display: none;
-  }
-  @keyframes sp { to { transform: rotate(360deg); } }
-</style>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbyZ_pEVZxfc99uj4oTz-kwqkQVNh2vZZE7rTjcJaR8QFiXAlb3M96Zd623I1U_TGBwcUg/exec"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShiftMaster — Redirecting…</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'DM Sans',sans-serif;
+      background:#050d1a;
+      color:#e8f0fe;
+      min-height:100vh;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;
+    }
+    body::before{
+      content:'';position:fixed;inset:0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 30%,rgba(30,111,255,0.10) 0%,transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 80%,rgba(245,120,20,0.08) 0%,transparent 60%);
+      pointer-events:none;
+    }
+    .wrap{position:relative;z-index:1;padding:40px 24px}
+    .logo{
+      width:72px;height:72px;background:#fff;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      margin:0 auto 28px;
+      box-shadow:0 0 32px rgba(30,111,255,0.4),0 8px 24px rgba(0,0,0,0.4);
+      font-size:32px;
+    }
+    h1{
+      font-family:'Rajdhani',sans-serif;
+      font-size:42px;font-weight:700;
+      letter-spacing:2px;text-transform:uppercase;
+      margin-bottom:6px;
+    }
+    h1 span{color:#f59e0b}
+    p{font-size:16px;color:#8aadd4;margin-bottom:32px}
+    .bar{
+      width:220px;height:3px;background:rgba(79,163,255,0.15);
+      border-radius:2px;margin:0 auto 28px;overflow:hidden;
+    }
+    .bar-fill{
+      height:100%;width:0;
+      background:linear-gradient(90deg,#1e6fff,#4fa3ff);
+      border-radius:2px;
+      animation:load 1.8s ease forwards;
+    }
+    @keyframes load{to{width:100%}}
+    a{
+      display:inline-block;
+      padding:13px 32px;
+      background:linear-gradient(135deg,#0d47a1,#1e6fff);
+      color:#fff;border-radius:10px;text-decoration:none;
+      font-family:'Rajdhani',sans-serif;
+      font-size:18px;font-weight:700;
+      letter-spacing:2px;text-transform:uppercase;
+      box-shadow:0 8px 24px rgba(13,71,161,0.45);
+    }
+    .note{margin-top:20px;font-size:13px;color:#445e7a}
+  </style>
 </head>
 <body>
-<div class="box">
-  <div class="icon">📋</div>
-  <h1>ShiftLog Pro</h1>
-  <p>Operations Management System</p>
-  <div class="spin" id="spin"></div>
-  <a class="btn" id="btn"
-     href="https://script.google.com/macros/s/AKfycbyZ_pEVZxfc99uj4oTz-kwqkQVNh2vZZE7rTjcJaR8QFiXAlb3M96Zd623I1U_TGBwcUg/exec"
-     onclick="loading()">
-    Open Shift Log →
-  </a>
-</div>
-<script>
-  function loading() {
-    document.getElementById('spin').style.display = 'block';
-    document.getElementById('btn').textContent = 'Opening…';
-  }
-
-  // Auto-redirect after 1 second
-  setTimeout(function() {
-    window.location.href = "https://script.google.com/macros/s/AKfycbyZ_pEVZxfc99uj4oTz-kwqkQVNh2vZZE7rTjcJaR8QFiXAlb3M96Zd623I1U_TGBwcUg/exec";
-  }, 1000);
-</script>
+  <div class="wrap">
+    <div class="logo">📋</div>
+    <h1>Shift<span>Master</span></h1>
+    <p>Redirecting to the application…</p>
+    <div class="bar"><div class="bar-fill"></div></div>
+    <a href="https://script.google.com/macros/s/AKfycbyZ_pEVZxfc99uj4oTz-kwqkQVNh2vZZE7rTjcJaR8QFiXAlb3M96Zd623I1U_TGBwcUg/exec">
+      Open ShiftMaster →
+    </a>
+    <p class="note">SAIL · Rourkela Steel Plant · New Plate Mill</p>
+  </div>
+  <script>
+    setTimeout(function(){
+      window.location.replace("https://script.google.com/macros/s/AKfycbyZ_pEVZxfc99uj4oTz-kwqkQVNh2vZZE7rTjcJaR8QFiXAlb3M96Zd623I1U_TGBwcUg/exec");
+    }, 1800);
+  </script>
 </body>
 </html>
